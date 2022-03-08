@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+img {
+  width: 100%;
+}
+img:hover {
+  transform: scale(1.01);
+}
+@media (min-width: 768px) {
+  .main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+  div {
+    width: 100%;
+  }
+  .main div:nth-child(9n-8):not(:first-child):not(:nth-child(2n + 3)) {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  .main div:nth-child(9n-6):not(:nth-child(2n-2)) {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
+@media (max-width: 452px) {
+  .main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main div:nth-child(3n) {
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 100%;
+  }
+}
