@@ -6,24 +6,24 @@
 }
 img {
   width: 100%;
+  transition: all ease-in-out 300ms;
 }
 
 /* desktop */
 
 @media (min-width: 768px) {
   img:hover {
-    transform: scale(1.05);
-    transition: transform 300ms;
+    transform: scale(1.09);
+    transition: transform ease-in-out 300ms;
   }
-  .main  div:hover{
-    box-shadow: 0 0 5px #616161;
-    transition: box-shadow 300ms;
-
-}
-  .main {
+  .list-container div:hover {
+    box-shadow: 0 0 8px #464646;
+  }
+  .list-container {
     width: 50%;
-    margin:  2px auto 0 auto;
+    margin: 2px auto 0 auto;
     display: grid;
+    padding: 2px;
     grid-template-columns: repeat(4, auto);
     gap: 0.5rem;
     align-items: center;
@@ -32,13 +32,14 @@ img {
     width: 100%;
     overflow: hidden;
     display: flex;
-    border-radius: 5px;
+    border-radius: 8px;
   }
-  .main div:nth-child(9n-8):not(:first-child):not(:nth-child(2n + 3)) {
+  .list-container
+    div:nth-child(9n-8):not(:first-child):not(:nth-child(2n + 3)) {
     grid-row: span 2;
     grid-column: span 2;
   }
-  .main div:nth-child(9n-6):not(:nth-child(2n-2)) {
+  .list-container div:nth-child(9n-6):not(:nth-child(2n-2)) {
     grid-row: span 2;
     grid-column: span 2;
   }
@@ -47,14 +48,21 @@ img {
 /* mobile */
 
 @media (max-width: 452px) {
-  .main {
+  img:hover {
+    transform: scale(1.09);
+    transition: transform ease-in-out 300ms;
+  }
+  .list-container div:hover {
+    box-shadow: 0 0 5px #464646;
+  }
+  .list-container {
     width: 99%;
     margin: 0 auto;
     display: grid;
     gap: 0.2rem;
     grid-template-columns: repeat(2, 1fr);
   }
-  .main div:nth-child(3n) {
+  .list-container div:nth-child(3n) {
     grid-column: span 2;
     grid-row: span 2;
     width: 100%;

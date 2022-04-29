@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>carters</title>
+</head>
+
+<body>
+    <script src="main.js"></script>
+    <div class="main">
+        <div class="header-container">
+            <div class="img">
+                <img src="https://ae.carters.com/static/version1649843520/frontend/Codilar/carter/en_US/images/logo.svg"
+                    title="" alt="" width="170">
+            </div>
+
+            <div class="navs">
+                <li class="logo1"><img
+                        src="https://ae.carters.com/static/version1649843520/frontend/Codilar/carter/en_US/images/logo-oshkosh.svg"
+                        width="90px" style="line-height: 2rem;" alt=""></li>
+                <li><img src="https://ae.carters.com/static/version1649843520/frontend/Codilar/carter/en_US/images/skiphop.svg"
+                        width="100px" alt=""></li>
+            </div>
+            <div>
+                <input type="search">
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="container">
+                <div class="btn-filter">
+                    <input type="button" class="filter-btn" id="filter-btn" value="Sort & Filter" onclick="call()">
+                </div>
+                <div class="column-one" id="on-off">
+                    <div class="list-container">
+                        <div class="list">
+                            <div class="filters-desk">
+                                <div class="filter">
+                                    <input type="checkbox" id="f1" name="f1" class="f1">
+                                    <div class="filter-lable-cnt">
+                                        <label class="filter-lable" for="f1">Category</label>
+                                        <i class="fa fa-angle-right"></i>
+                                    </div>
+                                    <div class="filter-content1">
+                                        <ul class="drop">
+                                            <li class="arrow back-setting-btn">
+                                                <span class="fas fa-arrow-left"></span>
+                                                Category
+                                            </li>
+                                            <li class="check-style">
+                                                <input type="checkbox" id="tops" class="tops">
+                                                <label class="category-txt" for="tops">Tops</label>
+                                            </li>
+                                            <li>
+                                                <span class="category-checkbox"><input type="checkbox" class="Bottoms"
+                                                        id="Bottoms"></span><label class="category-txt"
+                                                    for="Bottoms">Bottoms</label>
+                                            </li>
+                                            <li>
+                                                <span class="category-checkbox"><input type="checkbox" class="Swimwear"
+                                                        id="Swimwear"></span><label class="category-txt"
+                                                    for="Swimwear">Swimwear</label>
+                                            </li>
+                                            <li>
+                                                <span class="category-checkbox"><input type="checkbox" class="Shoes"
+                                                        id="Shoes"></span><label class="category-txt"
+                                                    for="Shoes">Shoes</label>
+                                            </li>
+                                            <li>
+                                                <span class="category-checkbox"><input type="checkbox" class="Sets"
+                                                        id="Sets"></span><label class="category-txt"
+                                                    for="Sets">Sets</label>
+                                            </li>
+                                            <li>
+                                                <span class="category-checkbox"><input type="checkbox" class="Dress"
+                                                        id="Dress"></span><label class="category-txt"
+                                                    for="Dress">Dress</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="checkbox" id="f2" name="f2" class="f2">
+                                    <div class="filter-lable-cnt">
+                                        <label class="filter-lable" for="f2">Shop-by-child</label>
+                                        <i class="fa fa-angle-right"></i>
+                                    </div>
+                                    <div class="filter-content2">
+                                        <ul class="drop">
+                                            <li class="arrow back-setting-btn"><span
+                                                    class="fas fa-arrow-left"></span>Shop BY Child</li>
+                                            <li>
+                                                <span class="category-checkbox"><input type="checkbox" class="boy"
+                                                        id="boy"></span><label class="shop-by-txt" for="boy">Baby
+                                                    Boy</label>
+                                            </li>
+                                            <li>
+                                                <span class="category-checkbox"><input type="checkbox" class="girl"
+                                                        id="girl"></span><label class="shop-by-txt" for="girl">Baby
+                                                    Girl</label>
+                                            </li>
+                                            <li>
+                                                <span class="category-checkbox"><input type="checkbox" class="neutral"
+                                                        id="neutral"></span><label class="shop-by-txt"
+                                                    for="neutral">Neutral</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="checkbox" id="f3" name="f3" class="f3">
+                                    <div class="filter-lable-cnt">
+                                        <label class="filter-lable" for="f3">Price</label>
+                                        <i class="fa fa-angle-right"></i>
+                                    </div>
+                                    <div class="filter-content3">
+                                        <ul class="drop">
+                                            <li class="arrow back-setting-btn"><span
+                                                    class="fas fa-arrow-left"></span>Price</li>
+                                            <span>
+                                                <li>
+                                                    <span class="price-input"><input type="text" id=""></span><span
+                                                        class="shop-by-txt"></span><span>-</span>
+                                                    <span class="category-checkbox"><input type="text" id=""></span>
+                                                </li>
+                                                <!-- <button class="price-btn">Go</button> -->
+                                            </span>
+                                        </ul>
+                                    </div>
+                                    <input type="checkbox" name="f4" id="f4" class="f4">
+                                    <div class="filter-lable-cnt">
+                                        <label for="f4" class="filter-lable">Gender</label>
+                                        <i class="fa fa-angle-right"></i>
+                                    </div>
+
+                                    <div class="filter-content4">
+                                        <ul class="drop">
+                                            <li class="arrow back-setting-btn">
+                                                <span class="fas fa-arrow-left"></span>Gender
+                                            </li>
+                                            <li>
+                                                <span class="category-checkbox"><input type="checkbox" class="gender-b"
+                                                        id="gender-b"></span><label class="shop-by-txt"
+                                                    for="gender-b">Boys</label>
+                                            </li>
+                                            <li>
+                                                <span class="category-checkbox"><input type="checkbox"
+                                                        class="gender-girl" id="gender-girl"></span><label
+                                                    class="shop-by-txt" for="gender-girl">Girls</label>
+                                            </li>
+                                            <li>
+                                                <span class="category-checkbox"><input type="checkbox" class="gender-no"
+                                                        id="gender-no"></span><label class="shop-by-txt"
+                                                    for="gender-no">Neutral</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cancle-done">
+                        <div class="cancle-btn">
+                            <input type="button" value="Cancle" onclick="cancle()">
+                        </div>
+                        <div class="done-btn">
+                            <input type="button" value="Done">
+                        </div>
+                    </div>
+                </div>
+                <div class="column-main">
+                    <div class="plp">
+                        <div class="top-bar">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="product-grid">
+                        <div class="product-container">
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+                            <div class="product-item-container">
+                                <img class="product-image" src="https://cdn1.staticans.com/image/data/aldo-shoes/09-feb-2022/8080948_1.JPG?width=500&height=635&mode=fill&fill=blur&format=auto
+                                 " alt="product-image" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

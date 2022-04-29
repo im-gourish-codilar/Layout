@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main div:nth-child(3n) {
+  display: grid;
+  grid-column: span 2;
+  width: 100%;
+}
+.main div:not(:nth-child(3n)) {
+  display: flex;
+}
+img {
+  width: 100%;
+}
+img:hover {
+  transition: transform 0.2s;
+  transform: scale(1.01);
+}
